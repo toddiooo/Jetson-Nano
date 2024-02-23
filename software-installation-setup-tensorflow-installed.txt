@@ -11,15 +11,15 @@ sudo apt install nano
 #to install matplotlib:
 #sudo apt install python3-matplotlib
 
+#to upgrade Numpy:
+sudo pip3 install numpy==1.16.1
+#pip3 install numpy --upgrade
+pip3 list | grep numpy
+#sudo pip3 uninstall numpy && pip3 install numpy==1.16.1
+
 #to install openCV:
 sudo apt install python3-opencv
 sudo apt remove python3-opencv
-
-#to upgrade Numpy:
-#pip3 install numpy --upgrade
-#pip3 list | grep numpy
-#sudo pip3 uninstall numpy && pip3 install numpy==1.16.1
-
 #----------------------------------------------------------------------------------------#
 #install TensorFlow:
 
@@ -42,10 +42,8 @@ sudo wget --no-check-certificate https://developer.download.nvidia.com/compute/r
 
 pip3 install tensorflow-2.7.0+nv22.1-cp36-cp36m-linux_aarch64.whl --user
 
-
-
+#----------------------------------------------------------------------------------------#
 #https://blog.csdn.net/m0_51004308/article/details/114697416?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-114697416-blog-50736300.235^v43^pc_blog_bottom_relevance_base7&spm=1001.2101.3001.4242.1&utm_relevant_index=3#5tensorflowgpu_100
-
 #----------------------------------------------------------------------------------------#
 #to install code-oss:
 cd Downloads
@@ -61,7 +59,6 @@ code-oss
 #at Code-oss, file-&gt;open folder-&gt;select pyPro, then click “ok”
 #at Code-oss, add extensions-&gt;search python, click the “python” extension
 #at the code-oss interface, click ctrl+Shift+P, type “select interpreter”
-
 
 #----------------------------------------------------------------------------------------#
 sudo apt-get install python3-pip
