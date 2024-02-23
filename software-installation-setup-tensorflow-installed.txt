@@ -18,7 +18,7 @@ sudo apt remove python3-opencv
 #to upgrade Numpy:
 #pip3 install numpy --upgrade
 #pip3 list | grep numpy
-#sudo pip3 uninstall numpy && pip3 install numpy==1.18.5
+#sudo pip3 uninstall numpy && pip3 install numpy==1.16.1
 
 #----------------------------------------------------------------------------------------#
 #install TensorFlow:
