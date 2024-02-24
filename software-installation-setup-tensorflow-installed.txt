@@ -19,6 +19,8 @@ pip3 list | grep numpy
 #sudo apt install python3-opencv
 #sudo apt remove python3-opencv
 
+#----------------------------------------------------------------------------------------#
+
 #checking
 python3
 import numpy as np
@@ -50,14 +52,21 @@ git clone https://github.com/h5py/h5py.git
 
 sudo pip3 install -U numpy==1.16.1 future==0.18.2 mock==3.0.5 h5py==2.10.0 keras_preprocessing==1.1.1 keras_applications==1.0.8 gast==0.2.2 futures protobuf pybind11 astor
 
-#sudo wget --no-check-certificate https://developer.download.nvidia.com/compute/redist/jp/v461/tensorflow/tensorflow-2.7.0+nv22.1-cp36-cp36m-linux_aarch64.whl
 sudo wget --no-check-certificate https://developer.download.nvidia.com/compute/redist/jp/v461/tensorflow/tensorflow-1.15.5+nv22.1-cp36-cp36m-linux_aarch64.whl
 
-#pip3 install tensorflow-2.7.0+nv22.1-cp36-cp36m-linux_aarch64.whl --user
 pip3 install tensorflow-1.15.5+nv22.1-cp36-cp36m-linux_aarch64.whl --user
 
 #----------------------------------------------------------------------------------------#
-#https://blog.csdn.net/m0_51004308/article/details/114697416?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-114697416-blog-50736300.235^v43^pc_blog_bottom_relevance_base7&spm=1001.2101.3001.4242.1&utm_relevant_index=3#5tensorflowgpu_100
+
+#check is tensorflow is installed and ensuring other libraries are not affacted:
+python3
+import tensorflow as tf
+tf.__version__
+import numpy as np
+np.__version__
+import cv2
+cv2.__version__
+
 #----------------------------------------------------------------------------------------#
 #to install code-oss:
 cd Downloads
@@ -75,6 +84,9 @@ code-oss
 #at the code-oss interface, click ctrl+Shift+P, type “select interpreter”
 
 #----------------------------------------------------------------------------------------#
+
+#to install adafruit-circuitpython-servokit:
+
 sudo apt-get install python3-pip
 sudo pip3 install adafruit-circuitpython-servokit
 sudo usermod -aG i2c todd
