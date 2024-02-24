@@ -1,4 +1,4 @@
-﻿#to get a fresh start:
+﻿#to get a fresh start: #this may take 30-40 minutes.
 sudo apt update && sudo apt upgrade
 
 #to install pip and pip3:
