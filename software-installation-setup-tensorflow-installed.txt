@@ -13,9 +13,7 @@ sudo apt install nano
 
 #to upgrade Numpy:
 sudo pip3 install numpy==1.16.1
-#pip3 install numpy --upgrade
 pip3 list | grep numpy
-#sudo pip3 uninstall numpy && pip3 install numpy==1.16.1
 
 #to install openCV:
 sudo apt install python3-opencv
