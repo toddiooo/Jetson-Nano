@@ -18,7 +18,6 @@ pip3 list | grep numpy
 #to install openCV: #Jetpack 4.6.3 has already pre-installed openCV 4.1.1
 #sudo apt install python3-opencv
 #sudo apt remove python3-opencv
-
 #----------------------------------------------------------------------------------------#
 
 #checking
