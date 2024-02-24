@@ -15,9 +15,17 @@ sudo apt install python3-matplotlib
 sudo pip3 uninstall numpy && pip3 install numpy==1.16.1
 pip3 list | grep numpy
 
-#to install openCV:
-sudo apt install python3-opencv
-sudo apt remove python3-opencv
+#to install openCV: #Jetpack 4.6.3 has already pre-installed openCV 4.1.1
+#sudo apt install python3-opencv
+#sudo apt remove python3-opencv
+
+#checking
+python3
+import numpy as np
+np.__version__
+import cv2
+cv2.__version__
+
 #----------------------------------------------------------------------------------------#
 #install TensorFlow:
 
