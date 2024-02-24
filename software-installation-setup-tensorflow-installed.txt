@@ -200,3 +200,9 @@ sudo python3 setup.py install
 
 #the following step may take half an hour to an hour
 sudo pip3 install face_recognition
+
+#checking:
+python3
+import face_recognition as fr
+fr.__version__
+############press Ctrl+D to exit##############
