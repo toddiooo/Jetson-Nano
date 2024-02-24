@@ -174,7 +174,12 @@ python code: add the following line
 JH71x0 = "JH71x0"
 #----------------------------------------------------------------------------------------#
 
-
+#install facial recognition library:
+sudo apt update
+sudo apt install cmake libopenblas-dev liblapack-dev libjpeg-dev
+git clone https://github.com/JetsonHacksNano/installSwapfile
+./installSwapfile/installSwapfile.sh
+sudo reboot now
 
 
 
