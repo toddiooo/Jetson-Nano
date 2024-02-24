@@ -9,10 +9,10 @@ sudo python3 -m pip install --upgrade pip
 sudo apt install nano
 
 #to install matplotlib:
-#sudo apt install python3-matplotlib
+sudo apt install python3-matplotlib
 
 #to upgrade Numpy:
-sudo pip3 install numpy==1.16.1
+sudo pip3 uninstall numpy && pip3 install numpy==1.16.1
 pip3 list | grep numpy
 
 #to install openCV:
