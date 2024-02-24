@@ -27,6 +27,8 @@ np.__version__
 import cv2
 cv2.__version__
 
+############press Ctrl+D to exit##############
+
 #----------------------------------------------------------------------------------------#
 #install TensorFlow:
 
@@ -66,6 +68,8 @@ np.__version__
 import cv2
 cv2.__version__
 
+############press Ctrl+D to exit##############
+
 #----------------------------------------------------------------------------------------#
 #to install code-oss:
 cd Downloads
@@ -104,6 +108,7 @@ sudo udevadm control --reload-rules&& sudo udevadm trigger
 
 sudo reboot now
 
+#if you have connected your servo motor to Jetson nano, try the following line to check:
 sudo i2cdetect -y -r 1
 
 #---------------need to change two places, the other one is the buffer one--------------#
@@ -147,8 +152,12 @@ Step 1: Locate the Library's Installation Directory
 First, you need to find where the adafruit_platformdetect library is installed on your system. You can usually find this path by using the Python interpreter:
 
 pythoncode:
+cd /usr/local/lib/python3.6/dist-packages/adafruit_platformdetect
+python3
 import adafruit_platformdetect
 print(adafruit_platformdetect.__file__)
+
+############press Ctrl+D to exit##############
 
 This will print the path to the __init__.py file of the adafruit_platformdetect package. The directory containing this file is where you'll find the constants module and the chips.py file.
 
@@ -159,7 +168,7 @@ To add a placeholder for the JH71x0 chip, you would typically add a line definin
 
 Terminal:
 cd /usr/local/lib/python3.6/dist-packages/adafruit_platformdetect/constants
-sudo chips.py
+sudo gedit chips.py
 
 python code: add the following line
 JH71x0 = "JH71x0"
