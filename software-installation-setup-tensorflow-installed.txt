@@ -181,11 +181,15 @@ git clone https://github.com/JetsonHacksNano/installSwapfile
 ./installSwapfile/installSwapfile.sh
 sudo reboot now
 
-wget http://dlib.net/files/dlib-19.7.tar.bz2
-tar jxvf dlib-19.7.tar.bz2
+wget http://dlib.net/files/dlib-19.20.tar.bz2
+tar jxvf dlib-19.20.tar.bz2
 
-cd dlib-19.7/dlib/dnn
+cd dlib-19.20
+cd dlib
+cd cuda
+
 gedit cudnn_dlibapi.cpp
+
 #search on "forward_algo = forward_best_algo", comment that out by adding "//" in front of it, then save the file
 
 cd ..
