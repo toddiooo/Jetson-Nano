@@ -78,8 +78,8 @@ sudo dpkg -i code-oss_1.32.3-arm64.deb
 code-oss
 
 #right click mouse on the desktop, and then create a folder on the desktop called pyPro
-#at Code-oss, file-&gt;open folder-&gt;select pyPro, then click “ok”
-#at Code-oss, add extensions-&gt;search python, click the “python” extension
+#at Code-oss, file->open folder->select pyPro, then click “ok”
+#at Code-oss, add extensions->;search python, click the “python” extension
 #at the code-oss interface, click ctrl+Shift+P, type “select interpreter”
 
 #----------------------------------------------------------------------------------------#
