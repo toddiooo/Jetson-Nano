@@ -194,7 +194,8 @@ gedit cudnn_dlibapi.cpp
 cd ..
 cd ..
 
-#the following step may take about half an hour 
+#the following step may take half an hour 
 sudo python3 setup.py install
 
-
+#the following step may take half an hour to an hour
+sudo pip3 install face_recognition
