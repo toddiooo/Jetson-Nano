@@ -88,9 +88,15 @@ code-oss
 
 sudo apt-get install python3-pip
 sudo pip3 install adafruit-circuitpython-servokit
-sudo usermod -aG i2c todd
+
+#replace "todd" by your account name
+sudo usermod -aG i2c todd 
+
 sudo groupadd -f -r gpio
-sudo useradd -a -G gpio todd
+
+#replace "todd" by your account name
+sudo useradd -a -G gpio todd 
+
 cd ~
 git clone https://github.com/NVIDIA/jetson-gpio.git
 sudo cp ~/jetson-gpio/lib/python/Jetson/GPIO/99-gpio.rules /etc/udev/rules.d
