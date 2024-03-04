@@ -86,13 +86,26 @@ code-oss
 #at Code-oss, add extensions->;search python, click the “python” extension
 #at the code-oss interface, click ctrl+Shift+P, type “select interpreter”
 
+#go to terminal:
+dpkg -L libopencv-python
+
+#if the last line is something like this:
+/usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so
+
+then copy the path:
+/usr/lib/python3.6/dist-packages/cv2/python-3.6
+
+#go to Code-oss
 click ctrl+Shift+P, type “Prereferences: Open Settings (JSON)”, then replace all the code by the following:
+
 {
     "python.linting.pylintArgs": ["--generate-members", "--extension-pkg-whitelist=cv2"],
 "python.autoComplete.extraPaths": ["/usr/lib/python3.6/dist-packages/cv2/python-3.6"],
     "python.pythonPath": "/usr/bin/python3",
     "editor.fontSize": 18
 }
+
+#double check: the path you just copied should be the same as the path inside the second line of code above
 
 then save the code, and close the file.
 #----------------------------------------------------------------------------------------#
