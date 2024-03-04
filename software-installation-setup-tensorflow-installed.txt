@@ -86,6 +86,15 @@ code-oss
 #at Code-oss, add extensions->;search python, click the “python” extension
 #at the code-oss interface, click ctrl+Shift+P, type “select interpreter”
 
+click ctrl+Shift+P, type “Prereferences: Open Settings (JSON)”, then replace all the code by the following:
+{
+    "python.linting.pylintArgs": ["--generate-members", "--extension-pkg-whitelist=cv2"],
+"python.autoComplete.extraPaths": ["/usr/lib/python3.6/dist-packages/cv2/python-3.6"],
+    "python.pythonPath": "/usr/bin/python3",
+    "editor.fontSize": 18
+}
+
+then save the code, and close the file.
 #----------------------------------------------------------------------------------------#
 
 #to install adafruit-circuitpython-servokit:
