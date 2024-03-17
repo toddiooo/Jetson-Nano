@@ -269,7 +269,11 @@ sudo python3 setup.py install
 python3
 import torchvision
 
+#----------------------------GPIO-------------------------------------------
 
+#follow the instructions to set up PWM pins
+
+https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%20Linux%20Driver%20Package%20Development%20Guide/hw_setup_jetson_io.html
 
 
 
