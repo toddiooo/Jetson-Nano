@@ -1,4 +1,6 @@
-﻿#to get a fresh start: #this may take 30-40 minutes.
+
+
+#to get a fresh start: #this may take 30-40 minutes.
 sudo apt update && sudo apt upgrade
 
 #to install pip and pip3:
@@ -281,8 +283,8 @@ https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Te
 #open terminal:
 /usr/bin/python3 -m pip install pyttsx3
 
-
-
+#play a mp3 clip:
+pip3 install pygame
 
 
 
