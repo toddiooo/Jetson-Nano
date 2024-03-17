@@ -286,5 +286,9 @@ https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Te
 #play a mp3 clip:
 pip3 install pygame
 
+#----------------------------GPS-------------------------------------------
+sudo apt-get install gpsd gpsd-clients python-gps
 
+dmesg | grep tty
 
+sudo gpsd todd-desktop -F /var/run/gpsd.sock
