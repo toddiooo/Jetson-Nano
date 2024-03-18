@@ -296,9 +296,10 @@ sudo gpsd todd-desktop -F /var/run/gpsd.sock
 lsusb
 ls /dev/ttyUSB*
 sudo apt install screen
-screen /dev/ttyUSB0 9600
 
 sudo usermod -a -G dialout todd
+
+sudo screen /dev/ttyUSB0 9600
 
 sudo pip3 install Flask
 
