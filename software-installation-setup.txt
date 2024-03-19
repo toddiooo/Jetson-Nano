@@ -301,6 +301,4 @@ sudo usermod -a -G dialout todd
 
 sudo screen /dev/ttyUSB0 9600
 
-sudo pip3 install Flask
-
 
