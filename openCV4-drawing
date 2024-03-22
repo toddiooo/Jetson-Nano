@@ -7,14 +7,18 @@ camSet='nvarguscamerasrc !  video/x-raw(memory:NVMM), width=3264, height=2464, f
 cam=cv2.VideoCapture(camSet) #this line is for Raspberry Pi cameras
 #cam=cv2.VideoCapture(0) #this line is for web cameras
 
+fnt=cv2.FONT_HERSHEY_DUPLEX
+
 while True:
     ret, frame=cam.read()
+    
     frame=cv2.rectangle(frame,(280,100),(400,170),(0,255,0),3)#modifying the frame
     frame=cv2.circle(frame,(340,130),50,(0,255,255),3)#draw a circle
-    fnt=cv2.FONT_HERSHEY_DUPLEX
-    frame=cv2.putText(frame,"testing...",(300,300),fnt,2,(100,100,255),1)
     frame=cv2.line(frame,(10,10),(630,470),(255,0,200),2)
     frame=cv2.arrowedLine(frame,(10,470),(630,10),(255,255,255),2)
+    
+    frame=cv2.putText(frame,"testing...",(300,300),fnt,2,(100,100,255),1)
+
     cv2.imshow("piCam", frame)#show the frame
     cv2.moveWindow('piCam',0,0)#move the dispaying window
 
@@ -23,3 +27,4 @@ while True:
 
 cam.release()
 cv2.destroyAllWindows()
+
